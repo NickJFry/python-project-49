@@ -4,17 +4,15 @@ import random
 def is_even():
     num = random.randint(1, 100)
     print('Question:', num)
-    one = 1
-    zero = 0
     if num % 2 == 0:
-        good = 'yes'
+        right_answer = 'yes'
     else:
-        good = 'no'
-    answer = input('Your answer: ')
-    if answer == good:
-        return one, one
+        right_answer = 'no'
+    user_answer = input('Your answer: ')
+    if user_answer == right_answer:
+        return right_answer, user_answer
     else:
-        return one, zero
+        return user_answer, user_answer
 
 
 count_answer = 3
@@ -24,8 +22,8 @@ while i < 1:
     print(rules)
     i = i + 1
 while count_answer != 0:
-    right_answer, user_answer = is_even()
-    if user_answer == right_answer:
+    even, not_even = is_even()
+    if even == not_even:
         print('Correct!')
         count_answer -= 1
     else:
@@ -34,5 +32,3 @@ while count_answer != 0:
 else:
     print('Congrat Brat!')
 
-
-print(is_even())

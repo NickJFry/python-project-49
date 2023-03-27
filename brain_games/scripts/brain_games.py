@@ -6,7 +6,6 @@ def greet():
 	print('Welcome to the Brain Games!')
 
 welcome_user()
-is_even()
 
 def main():
 	greet()

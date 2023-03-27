@@ -14,5 +14,6 @@ publish: #выполнит poetry publish --dry-run
 package-install: #выполнит python3 -m pip install --user dist/*.whl
 	python3 -m pip install --user dist/*.whl
 
-
+lint: #запускает poetry run flake8 brain_games
+	poetry run flake8 brain_games
 

@@ -2,8 +2,9 @@
 
 import brain_games.game_brain_even
 
+
 def main():
-    brain_games.game_even.is_even()
+    brain_games.game_brain_even.is_even()
 
 
 if __name__ == '__main__':

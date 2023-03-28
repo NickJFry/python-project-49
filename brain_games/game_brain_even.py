@@ -24,4 +24,4 @@ while count_answer != 0:
         print('"yes" is wrong answer ;(. Correct answer was "no".\nLet\'s try again')
         break
 else:
-    print('Congratulations,' '!')
+    print('Congratulations!')

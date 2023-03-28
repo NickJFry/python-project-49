@@ -5,6 +5,9 @@ rpi: #run poetry install
 brain-games: #run brain-games
 	poetry run brain-games
 
+brain-even: #run brain-even
+	poetry run brain-even
+
 build: #run poetry build
 	poetry build
 

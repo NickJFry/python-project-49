@@ -1,7 +1,9 @@
-import random
+import random, prompt
 
 
 def is_even():
+    name = prompt.string('May I have your name? ')
+    print('Hello,', name, '!')
     count_answer = 3
     rules = 'Answer "yes" if the number is even, otherwise answer "no"'
     print(rules)
@@ -20,4 +22,4 @@ def is_even():
             print('"yes" is wrong answer ;(. Correct answer was "no".\nLet\'s try again')
             break
     else:
-        print('Congratulations!')
+        print('Congratulations, 'f'{name}!')

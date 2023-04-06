@@ -27,5 +27,3 @@ def launch():
             break
     else:
         print('Congratulations, 'f'{user_name}!')
-
-launch()

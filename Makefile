@@ -8,6 +8,15 @@ brain-games: #run brain-games
 brain-even: #run brain-even
 	poetry run brain-even
 
+brain-calc: #run brain-calc
+	poetry run brain-calc
+
+brain-nod: #run brain-nod
+	poetry run brain-nod
+
+brain-prog: #run brain-progression
+	poetry run brain-progression
+
 build: #run poetry build
 	poetry build
 

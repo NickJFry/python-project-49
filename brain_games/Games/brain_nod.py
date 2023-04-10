@@ -16,6 +16,7 @@ def launch():
             else:
                 num2 = num2 - num1
         right_answer = num1
+        return right_answer, question
     #   print(right_answer)
     #     user_answer = input('Your answer: ')
     #     if int(user_answer) == right_answer:

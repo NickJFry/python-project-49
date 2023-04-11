@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-import brain_games.Games.brain_progression as prog
+import brain_games.games.brain_progression as prog
 from brain_games.game_core import game_start
 
 

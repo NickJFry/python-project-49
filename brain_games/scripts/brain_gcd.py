@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 
-import brain_games.Games.brain_nod as nod
+import brain_games.games.brain_nod as nod
 from brain_games.game_core import game_start
 
 

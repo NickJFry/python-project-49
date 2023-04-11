@@ -17,3 +17,4 @@ def launch():
     else:
         right_answer = 'yes'
     return right_answer, question
+

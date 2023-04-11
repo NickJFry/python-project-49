@@ -17,6 +17,9 @@ brain-nod: #run brain-nod
 brain-prog: #run brain-progression
 	poetry run brain-progression
 
+brain-prime: #run brain-prime
+	poetry run brain-prime
+
 build: #run poetry build
 	poetry build
 

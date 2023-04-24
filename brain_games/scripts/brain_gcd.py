@@ -2,11 +2,11 @@
 
 
 import brain_games.games.brain_nod as nod
-from brain_games.game_core import game_start
+from brain_games.game_core import play_game
 
 
 def main():
-    game_start(nod)
+    play_game(nod)
 
 
 if __name__ == '__main__':

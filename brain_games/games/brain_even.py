@@ -1,13 +1,20 @@
 import random
-# https://asciinema.org/connect/7685d9e0-be41-40b5-ab49-77cae8fc7158
 
-rules = 'Answer "yes" if the number is even, otherwise answer "no"'
+RULES = 'Answer "yes" if the number is even, otherwise answer "no"'
+START_RANGE = 1
+END_RANGE = 100
 
 
-def launch():
-    num = random.randint(1, 100)
-    question = num
+def is_even(num):
     if num % 2 == 0:
+        return True
+    return False
+
+
+def get_round():
+    num = random.randint(START_RANGE, END_RANGE)
+    question = num
+    if is_even(num) is True:
         right_answer = 'yes'
     else:
         right_answer = 'no'

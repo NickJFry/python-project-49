@@ -2,14 +2,21 @@
 name = "hexlet-code"
 version = "0.1.0"
 description = ""
-authors = ["Your Name <you@example.com>"]
+authors = ["Nick <nick.j.fry@yandex.ru>"]
 readme = "README.md"
 packages = [{include = "brain_games"}]
+
+
+classifiers = [
+"Topic :: Software Development :: Five logical games"
+]
+
+repository = "https://github.com/NickJFry/python-project-49"
+
 
 [tool.poetry.dependencies]
 python = "^3.10"
 prompt = "^0.4.1"
-
 
 [tool.poetry.group.dev.dependencies]
 flake8 = "^6.0.0"

@@ -10,7 +10,7 @@ def play_game(game):
     print(game.RULES)
     rounds = ROUNDS
     while rounds != 0:
-        right_answer, question = game.play_game()
+        right_answer, question = game.get_round()
         print('Question:', question)
         user_answer = input('Your answer: ')
         if user_answer == str(right_answer):

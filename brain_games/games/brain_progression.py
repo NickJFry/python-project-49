@@ -1,14 +1,19 @@
 from random import randint
-# https://asciinema.org/connect/7685d9e0-be41-40b5-ab49-77cae8fc7158
 
 
 RULES = 'What number is missing in the progression?'
+START_TERM = 1
+END_TERM = 20
+MIN_DIFF = 1
+MAX_DIFF = 10
+MIN_REPEAT = 5
+MAX_REPEAT = 10
 
 
 def get_progression_numbers():
-    term = randint(1, 20)
-    common_difference = randint(1, 10)
-    repeat = randint(5, 10)
+    term = randint(START_TERM, END_TERM)
+    common_difference = randint(MAX_DIFF, MAX_DIFF)
+    repeat = randint(MIN_REPEAT, MAX_REPEAT)
     series = []
     for num in range(term, term + common_difference * repeat, common_difference):
         series.append(num)
@@ -22,8 +27,8 @@ def get_progression_string(progression_list):
 
 def get_round():
     get_progression = get_progression_numbers()
-    get_string = get_progression_string(get_progression)
     element_x = randint(1, len(get_progression) - 1)
-    question = get_string.replace(str(get_progression[element_x]), '..')
     right_answer = get_progression[element_x]
+    get_progression[element_x] = '..'
+    question = get_progression_string(get_progression)
     return right_answer, question

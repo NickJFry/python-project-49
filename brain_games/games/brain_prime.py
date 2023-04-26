@@ -1,7 +1,6 @@
 import random
 from random import randint
 from math import sqrt
-# https://asciinema.org/connect/7685d9e0-be41-40b5-ab49-77cae8fc7158
 
 
 RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
@@ -21,7 +20,7 @@ def is_prime(num):
 def get_round():
     num = random.randint(START_RANGE, END_RANGE)
     question = num
-    if is_prime(num) is False:
+    if is_prime(num):
         right_answer = 'no'
     else:
         right_answer = 'yes'

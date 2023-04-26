@@ -14,7 +14,7 @@ def is_even(num):
 def get_round():
     num = random.randint(START_RANGE, END_RANGE)
     question = num
-    if is_even(num) is True:
+    if is_even(num):
         right_answer = 'yes'
     else:
         right_answer = 'no'

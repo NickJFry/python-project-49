@@ -10,25 +10,24 @@ MIN_REPEAT = 5
 MAX_REPEAT = 10
 
 
-def get_progression_numbers():
-    term = randint(START_TERM, END_TERM)
-    common_difference = randint(MAX_DIFF, MAX_DIFF)
-    repeat = randint(MIN_REPEAT, MAX_REPEAT)
+def get_progression(initial_term, common_difference, length):
     series = []
-    for num in range(term, term + common_difference * repeat, common_difference):
+    for num in range(initial_term, initial_term + common_difference * length, common_difference):
         series.append(num)
     return series
 
 
-def get_progression_string(progression_list):
-    progression = ' '.join(map(str, progression_list))
+def stringify(progression):
+    progression = ' '.join(map(str, progression))
     return progression
 
 
 def get_round():
-    get_progression = get_progression_numbers()
-    element_x = randint(1, len(get_progression) - 1)
-    right_answer = get_progression[element_x]
-    get_progression[element_x] = '..'
-    question = get_progression_string(get_progression)
+    progression = get_progression(randint(START_TERM, END_TERM),
+                                  randint(MIN_DIFF, MAX_DIFF),
+                                  randint(MAX_REPEAT, MAX_REPEAT))
+    hidden_term_index = randint(1, len(progression) - 1)
+    right_answer = progression[hidden_term_index]
+    progression[hidden_term_index] = '..'
+    question = stringify(progression)
     return right_answer, question

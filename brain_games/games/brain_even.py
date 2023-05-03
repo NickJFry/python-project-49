@@ -6,9 +6,7 @@ END_RANGE = 100
 
 
 def is_even(num):
-    if num % 2 == 0:
-        return True
-    return False
+    return num % 2 == 0
 
 
 def get_round():

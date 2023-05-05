@@ -9,7 +9,7 @@ For install:
 1. clone the repository: git clone https://github.com/NickJFry/python-project-49
 2. in terminal run command: make package-install
 
-To start the game type in terminal: make brain-even/brain-calc/brain-nod/brain-prog/brain-prime
+To start the game type in terminal: make brain-even/brain-calc/brain-gcd/brain-prog/brain-prime
 
 
 <a href="https://codeclimate.com/github/NickJFry/python-project-49/maintainability"><img 

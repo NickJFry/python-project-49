@@ -11,8 +11,8 @@ brain-even: #run brain-even
 brain-calc: #run brain-calc
 	poetry run brain-calc
 
-brain-nod: #run brain-nod
-	poetry run brain-nod
+brain-gcd: #run brain-gcd
+	poetry run brain-gcd
 
 brain-prog: #run brain-progression
 	poetry run brain-progression

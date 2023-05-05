@@ -1,6 +1,6 @@
 import random
 
-RULES = 'Answer "yes" if the number is even, otherwise answer "no"'
+RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
 START_RANGE = 1
 END_RANGE = 100
 

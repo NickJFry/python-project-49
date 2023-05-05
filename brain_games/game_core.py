@@ -17,8 +17,8 @@ def play_game(game):
             print('Correct!')
             rounds -= 1
         else:
-            print(user_answer +
-                  ' is wrong answer ;(. Correct answer was '
+            print(user_answer
+                  + ' is wrong answer ;(. Correct answer was '
                   + str(right_answer))
             print("Let's try again, "f"{user_name}!")
             break

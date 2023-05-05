@@ -15,7 +15,8 @@ def get_divisor(num1, num2):
 
 
 def get_round():
-    numbers = (random.randint(START_RANGE, END_RANGE), random.randint(START_RANGE, END_RANGE))
+    numbers = (random.randint(START_RANGE, END_RANGE),
+               random.randint(START_RANGE, END_RANGE))
     num1 = numbers[0]
     num2 = numbers[1]
     question = str(num1) + ' ' + str(num2)

@@ -12,7 +12,9 @@ MAX_REPEAT = 10
 
 def get_progression(initial_term, common_difference, length):
     series = []
-    for num in range(initial_term, initial_term + common_difference * length, common_difference):
+    for num in range(initial_term,
+                     initial_term + common_difference * length,
+                     common_difference):
         series.append(num)
     return series
 

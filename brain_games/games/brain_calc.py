@@ -3,16 +3,15 @@ import random
 
 RULES = 'What is the result of the expression?'
 
-START_FIRST_RANGE = 6
-END_FIRST_RANGE = 10
-
-START_SECOND_RANGE = 1
-END_SECOND_RANGE = 5
+FIRST_RANGE_START = 6
+FIRST_RANGE_END = 10
+SECOND_RANGE_START = 1
+SECOND_RANGE_END = 5
 
 
 def get_round():
-    num1 = random.randint(START_FIRST_RANGE, END_FIRST_RANGE)
-    num2 = random.randint(START_SECOND_RANGE, END_SECOND_RANGE)
+    num1 = random.randint(FIRST_RANGE_START, FIRST_RANGE_START)
+    num2 = random.randint(SECOND_RANGE_START, SECOND_RANGE_END)
     operators = ['+', '-', '*']
     sign = random.choice(operators)
     question = str(num1) + sign + str(num2)

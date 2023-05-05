@@ -14,7 +14,7 @@ def get_round():
     num2 = random.randint(SECOND_RANGE_START, SECOND_RANGE_END)
     operators = ['+', '-', '*']
     sign = random.choice(operators)
-    question = str(num1) + sign + str(num2)
+    question = str(num1) + '' + sign + '' + str(num2)
     if sign == '+':
         right_answer = str(num1 + num2)
     elif sign == '-':

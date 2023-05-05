@@ -12,12 +12,12 @@ SECOND_RANGE_END = 5
 def get_round():
     num1 = random.randint(FIRST_RANGE_START, FIRST_RANGE_START)
     num2 = random.randint(SECOND_RANGE_START, SECOND_RANGE_END)
-    operators = ['+', '-', '*']
+    operators = [' + ', ' - ', ' * ']
     sign = random.choice(operators)
-    question = str(num1) + '' + sign + '' + str(num2)
-    if sign == '+':
+    question = str(num1) + sign + str(num2)
+    if sign == ' + ':
         right_answer = str(num1 + num2)
-    elif sign == '-':
+    elif sign == ' - ':
         right_answer = str(num1 - num2)
     else:
         right_answer = str(num1 * num2)

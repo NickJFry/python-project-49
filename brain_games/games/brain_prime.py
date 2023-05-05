@@ -21,7 +21,7 @@ def get_round():
     num = random.randint(START_RANGE, END_RANGE)
     question = num
     if is_prime(num):
-        right_answer = 'no'
-    else:
         right_answer = 'yes'
+    else:
+        right_answer = 'no'
     return right_answer, question

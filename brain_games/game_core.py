@@ -18,7 +18,7 @@ def play_game(game):
             rounds -= 1
         else:
             print(user_answer + ' is wrong answer ;(. Correct answer was ' + str(right_answer))
-            print("Let's try again,", user_name)
+            print("Let's try again,", user_name, '!')
             break
     else:
         print('Congratulations, 'f'{user_name}!')
